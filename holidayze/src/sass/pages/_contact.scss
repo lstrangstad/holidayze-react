@@ -1,0 +1,60 @@
+@use "../mixin";
+
+.contact {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+
+  &__heading {
+    padding-bottom: 20px;
+  }
+
+  &__content {
+    max-width: 450px;
+  }
+
+  &__field {
+    border: none;
+  }
+
+  &__input-box {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  &__label {
+    font-size: 14px;
+  }
+
+  &__input {
+    padding: 5px;
+  }
+
+  #textarea {
+    min-height: 150px;
+  }
+
+  &__error {
+    color: rgb(203, 43, 43);
+  }
+
+  &__button {
+    @include mixin.button;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact {
+    padding: 40px;
+    min-height: 86vh;
+    &__container {
+      margin: 0 auto;
+    }
+
+    &__content {
+      margin-bottom: 20px;
+    }
+  }
+}

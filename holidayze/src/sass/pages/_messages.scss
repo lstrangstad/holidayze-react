@@ -1,0 +1,54 @@
+@use "../mixin";
+
+.messages {
+  padding: 20px;
+  min-height: 78vh;
+
+  &__link {
+    color: blue;
+    text-decoration: none;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &__content {
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 250px;
+  }
+
+  &__box {
+    margin-bottom: 10px;
+  }
+
+  &__label {
+    font-weight: bold;
+  }
+
+  &__output {
+    line-height: 1.5em;
+  }
+
+  &__btn {
+    @include mixin.button;
+  }
+}
+
+@media (min-width: 768px) {
+  .messages {
+    min-height: 87vh;
+    padding: 40px;
+
+    &__container {
+      gap: 40px;
+    }
+
+    &__content {
+      max-width: 350px;
+    }
+  }
+}

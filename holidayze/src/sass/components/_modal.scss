@@ -1,0 +1,29 @@
+@use "../mixin";
+
+.modal {
+  &__header {
+    text-align: center;
+  }
+
+  &__field {
+    border: none;
+  }
+
+  &__input-box {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  &__label {
+    font-size: 14px;
+  }
+
+  &__input {
+    padding: 5px;
+  }
+
+  &__button {
+    @include mixin.button;
+  }
+}

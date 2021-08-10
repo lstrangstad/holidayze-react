@@ -1,0 +1,36 @@
+@use "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: variables.$primaryFont;
+}
+
+body {
+  background-color: rgb(252, 252, 252);
+}
+
+img {
+  max-width: 100%;
+}
+
+.loader {
+  display: flex;
+  place-content: center;
+}
+
+.success {
+  background: variables.$successColor;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: variables.$headerFont;
+}

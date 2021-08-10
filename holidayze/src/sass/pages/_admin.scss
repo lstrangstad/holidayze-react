@@ -1,0 +1,82 @@
+.admin {
+  padding: 20px;
+  min-height: 76vh;
+
+  &__heading {
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    place-items: center;
+  }
+
+  &__link {
+    padding: 10px 0;
+    color: blue;
+    text-decoration: none;
+  }
+}
+
+.enquiry {
+  padding-bottom: 20px;
+  &__field {
+    padding: 20px;
+  }
+
+  &__heading {
+    font-size: 20px;
+    padding: 0 5px;
+    font-weight: bold;
+  }
+
+  &__label {
+    font-weight: bold;
+  }
+
+  &__output {
+    padding: 5px 0;
+  }
+
+  &__total {
+    padding-top: 5px;
+  }
+}
+
+.message {
+  &__field {
+    padding: 20px;
+  }
+
+  &__heading {
+    font-size: 20px;
+    padding: 0 5px;
+    font-weight: bold;
+  }
+
+  &__output {
+    padding: 5px 0;
+  }
+
+  &__label {
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 768px) {
+  .admin {
+    padding: 40px;
+    min-height: 87vh;
+    &__container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  }
+
+  .enquiry {
+    margin-bottom: 20px;
+  }
+}
